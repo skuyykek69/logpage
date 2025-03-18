@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Latar belakang gradien */
+    background: linear-gradient(to right, #009688, #00bcd4); /* Latar belakang gradasi */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,17 +104,28 @@ button:hover {
 }
 
 .social-icons a {
-    margin: 0 10px;
-    font-size: 24px; /* Ukuran ikon disesuaikan */
+    display: inline-flex; /* Menggunakan flexbox untuk memusatkan ikon */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Lebar bulatan */
+    height: 40px; /* Tinggi bulatan */
+    border-radius: 50%; /* Membuat bulatan */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
     color: #333; /* Warna ikon */
     text-decoration: none;
-    transition: color 0.3s; /* Transisi untuk warna saat hover */
+    margin: 0 10px; /* Margin antar ikon */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi untuk latar belakang dan transformasi */
 }
 
 .social-icons a:hover {
-    color: #007bff; /* Warna saat hover */
+    background-color: #007bff; /* Warna latar belakang saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+    color: white; /* Mengubah warna ikon saat hover */
 }
 
+.social-icons i {
+    font-size: 20px; /* Ukuran ikon */
+}
 /* Responsif untuk ukuran layar kecil */
 @media (max-width: 400px) {
     .social-icons a {
