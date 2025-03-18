@@ -96,3 +96,36 @@ button:hover {
 .message a:hover {
     text-decoration: underline;
 }
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px; /* Ukuran ikon disesuaikan */
+    color: #333; /* Warna ikon */
+    text-decoration: none;
+    transition: color 0.3s; /* Transisi untuk warna saat hover */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Warna saat hover */
+}
+
+/* Responsif untuk ukuran layar kecil */
+@media (max-width: 400px) {
+    .social-icons a {
+        font-size: 20px; /* Ukuran ikon lebih kecil pada layar kecil */
+        margin: 0 5px; /* Mengurangi margin */
+    }
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px; 
+    color: #666; 
+}
